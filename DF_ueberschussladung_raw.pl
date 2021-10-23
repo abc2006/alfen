@@ -127,7 +127,7 @@ setstate DF_ueberschussladung_Keller 2021-10-22 12:22:40 e_alfen_Socket_Keller_M
 setstate DF_ueberschussladung_Keller 2021-10-22 12:22:40 e_alfen_Socket_Keller_Mode3State_ EVSE ready and standby
 setstate DF_ueberschussladung_Keller 2021-10-22 09:13:20 mode enabled
 setstate DF_ueberschussladung_Keller 2021-10-23 09:32:27 number_of_phases_calc 1
-setstate DF_ueberschussladung_Keller 2021-10-23 09:32:27 pvpower 3814.11
+setstate DF_ueberschussladung_Keller 2021-10-23 09:32:27 pvpower 3700.11
 setstate DF_ueberschussladung_Keller 2021-10-23 09:32:29 set_charging_stopped_timestamp_sec 1346
 setstate DF_ueberschussladung_Keller 2021-10-23 09:32:25 set_current_timestamp 13
 setstate DF_ueberschussladung_Keller 2021-10-23 09:32:29 set_current_timestamp_sec 4
