@@ -9,5 +9,5 @@ Mode3Status:
     C2:     Fahrzeug wird geladen
     D1:     Belüftetes Laden von Fahrzeug genehmigt, nicht aber von der Wallbox
     D2:     Fahrzeug wird belüftet geladen
-    E:      Fehler im Fahrzeug
+    E:      Fehler im Fahrzeug/Ladung nicht Authentifiziert
     F:      Fehler in der Wallbox
