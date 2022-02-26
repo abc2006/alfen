@@ -203,41 +203,41 @@ actual_charge_power:[alfen_Socket_aussen:RealPowerSum:d0]
 attr DF_ueberschussladung_aussen room _types->doif,tesla
 attr DF_ueberschussladung_aussen stateFormat 1_3_phases ph Ladestrom actual_charge_current/actual_charge_current_setpoint A status actual_charge_power/available_charge_power_debug_from_gendev_PV W
 
-setstate DF_ueberschussladung_aussen 3 ph Ladestrom 0/0 A Ueberschussladung - 3ph-Power (>4000) 7833/17654 W
+setstate DF_ueberschussladung_aussen 3 ph Ladestrom 0/0 A Ueberschussladung - 3ph-Power (>4000) 7823/17114 W
 setstate DF_ueberschussladung_aussen 2022-02-23 11:40:17 1_3_phases 3
-setstate DF_ueberschussladung_aussen 2022-02-26 13:49:03 Device BMS
+setstate DF_ueberschussladung_aussen 2022-02-26 13:53:15 Device BMS
 setstate DF_ueberschussladung_aussen 2022-02-23 11:40:17 actual_charge_current 0
 setstate DF_ueberschussladung_aussen 2022-02-23 11:40:17 actual_charge_current_setpoint 0
-setstate DF_ueberschussladung_aussen 2022-02-26 13:48:53 actual_charge_power 7833
+setstate DF_ueberschussladung_aussen 2022-02-26 13:52:43 actual_charge_power 7823
 setstate DF_ueberschussladung_aussen 2022-02-23 11:40:18 available_charge_current 8.07101449275362
 setstate DF_ueberschussladung_aussen 2022-02-23 11:40:17 available_charge_power 5569
 setstate DF_ueberschussladung_aussen 2022-02-23 11:40:17 available_charge_power2 5569
 setstate DF_ueberschussladung_aussen 2022-02-11 12:19:54 available_charge_power_debug 11938.4
-setstate DF_ueberschussladung_aussen 2022-02-26 13:49:03 available_charge_power_debug_from_gendev_PV 17654
+setstate DF_ueberschussladung_aussen 2022-02-26 13:53:15 available_charge_power_debug_from_gendev_PV 17114
 setstate DF_ueberschussladung_aussen 2022-02-25 08:52:44 block_sofortladen executed
-setstate DF_ueberschussladung_aussen 2022-02-26 13:49:03 block_ueberschussgesteuert executed
-setstate DF_ueberschussladung_aussen 2022-02-26 13:49:03 ch2 13333
+setstate DF_ueberschussladung_aussen 2022-02-26 13:53:15 block_ueberschussgesteuert executed
+setstate DF_ueberschussladung_aussen 2022-02-26 13:53:06 ch2 13063
 setstate DF_ueberschussladung_aussen 2022-02-26 02:43:49 charging_stopped EVSE ready and standby
-setstate DF_ueberschussladung_aussen 2022-02-26 13:49:03 e_BMS_1_Power_total 5021
-setstate DF_ueberschussladung_aussen 2022-02-26 13:49:03 e_BMS_1_SOC_BMS_total 61.7
-setstate DF_ueberschussladung_aussen 2022-02-26 13:49:03 e_BMS_1_SOC_lademax 95
-setstate DF_ueberschussladung_aussen 2022-02-26 13:48:20 e_LRW3E7FA0MC336661_battery_level 99
-setstate DF_ueberschussladung_aussen 2022-02-26 13:48:20 e_LRW3E7FA0MC336661_charge_limit_soc 100
-setstate DF_ueberschussladung_aussen 2022-02-26 13:48:54 e_alfen_Socket_aussen_MaxCurrentValidTimeRemaining 282
-setstate DF_ueberschussladung_aussen 2022-02-26 13:49:03 e_fsp10k_AC_input_active_Power_total -6822
+setstate DF_ueberschussladung_aussen 2022-02-26 13:53:15 e_BMS_1_Power_total 4751
+setstate DF_ueberschussladung_aussen 2022-02-26 13:53:15 e_BMS_1_SOC_BMS_total 63.1
+setstate DF_ueberschussladung_aussen 2022-02-26 13:53:15 e_BMS_1_SOC_lademax 95
+setstate DF_ueberschussladung_aussen 2022-02-26 13:52:20 e_LRW3E7FA0MC336661_battery_level 99
+setstate DF_ueberschussladung_aussen 2022-02-26 13:52:20 e_LRW3E7FA0MC336661_charge_limit_soc 100
+setstate DF_ueberschussladung_aussen 2022-02-26 13:53:15 e_alfen_Socket_aussen_MaxCurrentValidTimeRemaining 294
+setstate DF_ueberschussladung_aussen 2022-02-26 13:53:14 e_fsp10k_AC_input_active_Power_total -6849
 setstate DF_ueberschussladung_aussen 2022-02-23 11:40:17 mode enabled
-setstate DF_ueberschussladung_aussen 2022-02-26 13:49:03 mode3state C2
-setstate DF_ueberschussladung_aussen 2022-02-26 13:49:03 number_of_phases_calc 3
-setstate DF_ueberschussladung_aussen 2022-02-26 13:48:57 pvfirst 33.3
-setstate DF_ueberschussladung_aussen 2022-02-26 13:49:03 pvpower 14974
+setstate DF_ueberschussladung_aussen 2022-02-26 13:53:15 mode3state C2
+setstate DF_ueberschussladung_aussen 2022-02-26 13:53:15 number_of_phases_calc 3
+setstate DF_ueberschussladung_aussen 2022-02-26 13:53:06 pvfirst 31.9
+setstate DF_ueberschussladung_aussen 2022-02-26 13:53:14 pvpower 14675
 setstate DF_ueberschussladung_aussen 2022-02-23 11:40:17 set_charging_stopped_timestamp_sec 0
-setstate DF_ueberschussladung_aussen 2022-02-26 13:48:57 set_current_timestamp 16
+setstate DF_ueberschussladung_aussen 2022-02-26 13:53:09 set_current_timestamp 16
 setstate DF_ueberschussladung_aussen 2022-02-26 10:58:13 set_current_timestamp_sec 0
-setstate DF_ueberschussladung_aussen 2022-02-26 13:38:36 set_phases_timestamp 1
-setstate DF_ueberschussladung_aussen 2022-02-26 13:49:03 set_phases_timestamp_sec 627
+setstate DF_ueberschussladung_aussen 2022-02-26 13:50:25 set_phases_timestamp 1
+setstate DF_ueberschussladung_aussen 2022-02-26 13:53:15 set_phases_timestamp_sec 170
 setstate DF_ueberschussladung_aussen 2022-02-26 02:43:49 sofortladung nein
-setstate DF_ueberschussladung_aussen 2022-02-26 13:49:03 solarpower 14974
+setstate DF_ueberschussladung_aussen 2022-02-26 13:53:06 solarpower 14670
 setstate DF_ueberschussladung_aussen 2022-02-23 11:40:17 state initialized
-setstate DF_ueberschussladung_aussen 2022-02-26 13:49:03 status Ueberschussladung - 3ph-Power (>4000)
-setstate DF_ueberschussladung_aussen 2022-02-26 13:49:03 tmp_calc_current 26
+setstate DF_ueberschussladung_aussen 2022-02-26 13:53:15 status Ueberschussladung - 3ph-Power (>4000)
+setstate DF_ueberschussladung_aussen 2022-02-26 13:53:15 tmp_calc_current 25
 
