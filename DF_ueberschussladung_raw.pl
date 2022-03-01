@@ -20,11 +20,9 @@ sub set_charge_current{
 } # subs
 
 ueberschussgesteuert{
-	Log3("$SELF",5,"set_charge_current() EVENTS $EVENTS");
+	Log3("$SELF",2,"set_charge_current() EVENTS $EVENTS");
 	my $callback = [alfen_Socket_aussen:MaxCurrentValidTimeRemaining];
 	my $ret;
-	$ret = set_charge_current("0");
-	Log3("$SELF",2,"set_charge_current() ret $ret");
 	if([?alfen_Socket_aussen:state] eq "disconnected")
 	{
 	return;
@@ -39,7 +37,7 @@ ueberschussgesteuert{
 		fhem("setreading $SELF status Kein Fahrzeug angeschlossen");
 		$ret = set_charge_current("0");
 		fhem("setreading $SELF sofortladung nein");
-		Log3("$SELF",0,"set_charge_current() ret $ret");
+		Log3("$SELF",5,"set_charge_current() ret_mode3state $ret");
 		
 		return;
 	}
@@ -50,7 +48,7 @@ ueberschussgesteuert{
 		}
 		$ret = set_charge_current("16");
 		fhem("setreading $SELF status Sofortladung -> Vollgas");
-		Log3("$SELF",0,"set_charge_current() ret $ret");
+		Log3("$SELF",0,"set_charge_current() ret_sofortladung $ret");
 		return;
 	}
 	
@@ -58,7 +56,7 @@ ueberschussgesteuert{
 	{
 		$ret = set_charge_current("16");
 		fhem("setreading $SELF status Standby - provide Power for preheat");
-		Log3("$SELF",0,"set_charge_current() ret $ret");
+		Log3("$SELF",0,"set_charge_current() ret_Standby $ret");
 		return;	
 	}
 	# Wenn sonst der Akku beschädigt wird, weil er zu leer ist
@@ -68,7 +66,7 @@ ueberschussgesteuert{
 		}
 		$ret = set_charge_current("6");
 		fhem("setreading $SELF status EVFirst");
-		Log3("$SELF",0,"set_charge_current() ret $ret");
+		Log3("$SELF",0,"set_charge_current() ret_EVFirst $ret");
 		return;
 	}	
 
@@ -78,7 +76,7 @@ ueberschussgesteuert{
 			fhem("set alfen_Socket_aussen Charge_with_1_or_3_phases 3");
 		}
 		$ret = set_charge_current("16");
-		Log3("$SELF",0,"set_charge_current() ret $ret");
+		Log3("$SELF",0,"set_charge_current() ret_WRempty $ret");
 		fhem("setreading $SELF status WRempty");
 		return;
 	}
@@ -90,7 +88,7 @@ ueberschussgesteuert{
 		}
 		$ret = set_charge_current("16");
 		fhem("setreading $SELF status PVBattery full");
-		Log3("$SELF",0,"set_charge_current() ret $ret");
+		Log3("$SELF",0,"set_charge_current() ret_PVBatFull $ret");
 		return;
 	}
 	
@@ -147,7 +145,8 @@ ueberschussgesteuert{
 	if([?BMS:1_SOC_BMS_total] > 30){
 	$available_charge_current = $available_charge_current+1;
 	}
-	
+	Log3("$SELF",5,"set_charge_current() available_charge_current $available_charge_current");
+
 	fhem("setreading $SELF tmp_calc_current $available_charge_current");
 	
 if($available_charge_current > 0 && $available_charge_current < 6){
@@ -158,7 +157,7 @@ if($available_charge_current > 16){
 	$available_charge_current = 16;
 }
 $ret = set_charge_current($available_charge_current);
-Log3("$SELF",0,"set_charge_current() ret $ret");
+Log3("$SELF",5,"set_charge_current() ret_ueberschuss $ret");
 
 }
 
